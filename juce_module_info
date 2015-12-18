@@ -1,0 +1,28 @@
+{
+  "id": "RestRequest",
+  "name": "RestRequest",
+  "version": "0.0.1",
+  "description": "Add description",
+  "website": "Add URL",
+  "license": "Not Specified",
+  "dependencies": [
+    {
+      "id": "juce_core",
+      "version": "matching"
+    }
+  ],
+  "include": "RestRequest.h",
+  "compile": [
+    {
+      "file": "RestRequest.cpp",
+      "target": "! xcode"
+    },
+    {
+      "file": "RestRequest.mm",
+      "target": "xcode"
+    }
+  ],
+  "browse": [
+    "Source/*"
+  ]
+}

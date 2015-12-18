@@ -1,0 +1,6 @@
+PROJECT_NAME = RestRequest
+INPUT = Source
+OUTPUT_DIRECTORY = docs
+GENERATE_LATEX         = NO
+GENERATE_HTML          = YES
+HTML_OUTPUT            = .
