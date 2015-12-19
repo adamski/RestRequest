@@ -1,6 +1,6 @@
 {
-  "id": "RestRequest",
-  "name": "RestRequest",
+  "id": "restrequest",
+  "name": "restrequest",
   "version": "0.0.1",
   "description": "Add description",
   "website": "Add URL",
@@ -11,18 +11,45 @@
       "version": "matching"
     }
   ],
-  "include": "RestRequest.h",
+  "include": "restrequest.h",
   "compile": [
     {
-      "file": "RestRequest.cpp",
+      "file": "restrequest.cpp",
       "target": "! xcode"
     },
     {
-      "file": "RestRequest.mm",
+      "file": "restrequest.mm",
       "target": "xcode"
     }
   ],
   "browse": [
+    ".git/*",
+    ".git/hooks/*",
+    ".git/info/*",
+    ".git/logs/*",
+    ".git/logs/refs/*",
+    ".git/logs/refs/heads/*",
+    ".git/logs/refs/remotes/*",
+    ".git/logs/refs/remotes/origin/*",
+    ".git/objects/*",
+    ".git/objects/19/*",
+    ".git/objects/27/*",
+    ".git/objects/2d/*",
+    ".git/objects/30/*",
+    ".git/objects/31/*",
+    ".git/objects/33/*",
+    ".git/objects/3c/*",
+    ".git/objects/ad/*",
+    ".git/objects/ba/*",
+    ".git/objects/be/*",
+    ".git/objects/c9/*",
+    ".git/objects/info/*",
+    ".git/objects/pack/*",
+    ".git/refs/*",
+    ".git/refs/heads/*",
+    ".git/refs/remotes/*",
+    ".git/refs/remotes/origin/*",
+    ".git/refs/tags/*",
     "Source/*"
   ]
 }

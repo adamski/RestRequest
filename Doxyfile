@@ -1,5 +1,5 @@
-PROJECT_NAME = RestRequest
-INPUT = Source
+PROJECT_NAME = restrequest
+INPUT = .git .git/hooks .git/info .git/logs .git/logs/refs .git/logs/refs/heads .git/logs/refs/remotes .git/logs/refs/remotes/origin .git/objects .git/objects/19 .git/objects/27 .git/objects/2d .git/objects/30 .git/objects/31 .git/objects/33 .git/objects/3c .git/objects/ad .git/objects/ba .git/objects/be .git/objects/c9 .git/objects/info .git/objects/pack .git/refs .git/refs/heads .git/refs/remotes .git/refs/remotes/origin .git/refs/tags Source
 OUTPUT_DIRECTORY = docs
 GENERATE_LATEX         = NO
 GENERATE_HTML          = YES
