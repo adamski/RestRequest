@@ -11,8 +11,6 @@
 #ifndef RESTREQUEST_H_INCLUDED
 #define RESTREQUEST_H_INCLUDED
 
-#include "../JuceLibraryCode/JuceHeader.h"
-
 class RestRequest
 {
 public:
