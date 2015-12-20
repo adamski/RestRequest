@@ -40,9 +40,6 @@ public:
             MemoryOutputStream output;
             
             fields.writeAsJSON(output, 0, false);
-            //var body = &fields;
-            //bodyAsString = JSON::toString(body);
-            DBG (output.toString());
             urlRequest = urlRequest.withPOSTData (output.toString());
         }
         
@@ -50,13 +47,7 @@ public:
         
         response.result = checkInputStream (in);
         if (response.result.failed()) return response;
-        
-        //for (auto key : responseHeaders.getAllKeys())
-        //{
-        //    DBG (key << ": " << responseHeaders.getValue(key, "n/a"));
-        //}
-        DBG (response.status);
-        
+
         response.bodyAsString = in->readEntireStreamAsString();
         response.result = JSON::parse(response.bodyAsString, response.body);
 
@@ -123,7 +114,6 @@ public:
         return bodyAsString;
     }
     
-    
 private:
     URL url;
     StringPairArray headers;
@@ -134,7 +124,7 @@ private:
     
     Result checkInputStream (InputStream* in)
     {
-        if (! in) return Result::fail ("RESTREQUEST request failed, check your internet connection");
+        if (! in) return Result::fail ("HTTP request failed, check your internet connection");
         return Result::ok();
     }
     
