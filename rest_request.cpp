@@ -26,7 +26,7 @@ SOFTWARE.
 
 
 #include "AppConfig.h"
-#include "restrequest.h"
+#include "rest_request.h"
 
 
 namespace adamski {
