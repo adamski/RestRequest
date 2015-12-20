@@ -66,49 +66,40 @@ public:
     
     RestRequest get (const String& endpoint)
     {
-        RestRequest req (*this);
         req.verb = "GET";
         req.endpoint = endpoint;
         
-        return req;
+        return *this;
     }
 
     RestRequest post (const String& endpoint)
     {
-        RestRequest req (*this);
         req.verb = "POST";
         req.endpoint = endpoint;
         
-        return req;
+        return *this;
     }
     
     RestRequest put (const String& endpoint)
     {
-        RestRequest req (*this);
         req.verb = "PUT";
         req.endpoint = endpoint;
         
-        return req;
+        return *this;
     }
 
     RestRequest del (const String& endpoint)
     {
-        RestRequest req (*this);
         req.verb = "DELETE";
         req.endpoint = endpoint;
         
-        return req;
+        return *this;
     }
     
     RestRequest field (const String& name, const var& value)
     {
         fields.setProperty(name, value);
-        DBG (fields.getProperties().size());
-        // DEBUG
-        MemoryOutputStream output;
-        fields.writeAsJSON(output, 0, false);
-        DBG (output.toString());
-        return *this;
+
     }
     
     RestRequest header (const String& name, const String& value)
