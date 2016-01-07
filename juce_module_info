@@ -8,7 +8,7 @@
   "dependencies": [
     {
       "id": "juce_core",
-      "version": "matching"
+      "version": "4.1.0"
     }
   ],
   "include": "rest_request.h",
