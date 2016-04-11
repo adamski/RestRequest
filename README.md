@@ -39,7 +39,7 @@ adamski::RestRequest::Response response = request.post ("registry/_find")
         .execute();
 ```
 
-Example 'PUT' request with chained field methods:
+Example `PUT` request with chained field methods:
 
 ```cpp
 adamski::RestRequest::Response response = request.put ("_users/" + id)
