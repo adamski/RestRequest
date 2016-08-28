@@ -52,3 +52,5 @@ adamski::RestRequest::Response response = request.put ("_users/" + id)
         .execute();
 
 ```
+
+If you need to encode or decode strings with SHA1 I made a JUCE module out of an open source library called smallsha1: https://github.com/adamski/smallsha1
