@@ -35,7 +35,7 @@ Example `POST` request:
 
 ```cpp
 adamski::RestRequest::Response response = request.post ("registry/_find")
-        .field ("selector", propertyAsVar("$text", searchString))
+        .field ("selector", searchString)
         .execute();
 ```
 
