@@ -24,6 +24,18 @@ SOFTWARE.
 
 */
 
+/*
+BEGIN_JUCE_MODULE_DECLARATION
+    ID:               rest_request
+    vendor:           adamski
+    version:          0.2.0
+    name:             RestRequest
+    description:      Simplify requests to HTTP REST and JSON APIs
+    website:          https://github.com/adamski/RestRequest
+    dependencies:     juce_core
+END_JUCE_MODULE_DECLARATION 
+*/
+
 #pragma once
 #include <modules/juce_core/juce_core.h>
 

@@ -1,7 +1,7 @@
 {
   "id": "rest_request",
   "name": "rest_request",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Module to simplify calls to HTTP REST APIs",
   "website": "https://github.com/adamski/RestRequest",
   "license": "Not Specified",
