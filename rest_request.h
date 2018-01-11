@@ -37,7 +37,7 @@ END_JUCE_MODULE_DECLARATION
 */
 
 #pragma once
-#include <modules/juce_core/juce_core.h>
+#include "JuceHeader.h"
 
 namespace adamski {
 using namespace juce;

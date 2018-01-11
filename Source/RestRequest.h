@@ -38,8 +38,8 @@ public:
         if (hasFields)
         {
             MemoryOutputStream output;
-            
-            fields.writeAsJSON(output, 0, false);
+
+            fields.writeAsJSON (output, 0, false, 20);
             urlRequest = urlRequest.withPOSTData (output.toString());
         }
         
